@@ -49,20 +49,20 @@ public class MagneticraftNonIngotModule implements IModule {
 
 	@Override
 	public void onInit(IModuleData moduleData, FMLInitializationEvent event) {
-		MagneticraftHelper helper = MagneticraftHelper.INSTANCE;
-		IMiscHelper miscHelper = MiscHelper.INSTANCE;
-		for(IMaterial material : moduleData.getMaterials()) {
-			String oreOredict = miscHelper.getOredictName("ore", material.getName());
-			String materialOredict = miscHelper.getOredictName(material.getType().getFormName(), material.getName());
-
-			IDynamicSpecConfig config = configs.get(material);
-			String configByproduct = config.getDefinedString("magneticraft.grinderByproduct", "minecraft:gravel",
-					miscHelper.metaItemPredicate(), "The default byproduct material to output in Magneticraft's grinder.");
-			ItemStack byproduct = miscHelper.parseMetaItem(configByproduct);
-
-			helper.registerGrinderRecipe(
-					miscHelper.getRecipeKey("magneticraft.ore_to_material", material.getName()),
-					oreOredict, materialOredict, material.getType().isCrystalline() ? 2 : 4, byproduct, 1, 0.15F, 50);
-		}
+//		MagneticraftHelper helper = MagneticraftHelper.INSTANCE;
+//		IMiscHelper miscHelper = MiscHelper.INSTANCE;
+//		for(IMaterial material : moduleData.getMaterials()) {
+//			String oreOredict = miscHelper.getOredictName("ore", material.getName());
+//			String materialOredict = miscHelper.getOredictName(material.getType().getFormName(), material.getName());
+//
+//			IDynamicSpecConfig config = configs.get(material);
+//			String configByproduct = config.getDefinedString("magneticraft.grinderByproduct", "minecraft:gravel",
+//					miscHelper.metaItemPredicate(), "The default byproduct material to output in Magneticraft's grinder.");
+//			ItemStack byproduct = miscHelper.parseMetaItem(configByproduct);
+//
+//			helper.registerGrinderRecipe(
+//					miscHelper.getRecipeKey("magneticraft.ore_to_material", material.getName()),
+//					oreOredict, materialOredict, material.getType().isCrystalline() ? 2 : 4, byproduct, 1, 0.15F, 50);
+//		}
 	}
 }

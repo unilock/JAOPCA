@@ -271,7 +271,7 @@ dependencies {
 
 	// Magneticraft
 	modImplementation "curse.maven:modelloader-277663:2744735"
-	modImplementation "curse.maven:magneticraft-224808:3791484"
+	modImplementation "curse.maven:magnetic-engineering-521155:3478543"
 
 	// Mekanism
 	modImplementation "MCMultiPart2:MCMultiPart:2.5.3"

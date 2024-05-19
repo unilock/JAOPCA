@@ -98,15 +98,15 @@ public class MagneticraftCompatModule implements IModule {
 							blockOredict, lightPlateOredict, material.isSmallStorageBlock() ? 2 : 5);
 				}
 			}
-			if(type.isIngot() && !TO_DUST_BLACKLIST.contains(name) && !configToDustBlacklist.contains(name)) {
-				String materialOredict = miscHelper.getOredictName(type.getFormName(), name);
-				String dustOredict = miscHelper.getOredictName("dust", name);
-				if(oredict.contains(dustOredict)) {
-					helper.registerGrinderRecipe(
-							miscHelper.getRecipeKey("magneticraft.material_to_dust", name),
-							materialOredict, dustOredict, 1, 50);
-				}
-			}
+//			if(type.isIngot() && !TO_DUST_BLACKLIST.contains(name) && !configToDustBlacklist.contains(name)) {
+//				String materialOredict = miscHelper.getOredictName(type.getFormName(), name);
+//				String dustOredict = miscHelper.getOredictName("dust", name);
+//				if(oredict.contains(dustOredict)) {
+//					helper.registerGrinderRecipe(
+//							miscHelper.getRecipeKey("magneticraft.material_to_dust", name),
+//							materialOredict, dustOredict, 1, 50);
+//				}
+//			}
 			if(type.isIngot() && !HEAVY_PLATE_BLACKLIST.contains(name) && !configToHeavyPlateBlacklist.contains(name)) {
 				String materialOredict = miscHelper.getOredictName(type.getFormName(), name);
 				String heavyPlateOredict = miscHelper.getOredictName("heavyPlate", name);

@@ -102,9 +102,9 @@ public class MagneticraftModule implements IModule {
 			helper.registerCrushingTableRecipe(
 					miscHelper.getRecipeKey("magneticraft.ore_to_rocky_chunk_crushing_table", material.getName()),
 					oreOredict, rockyChunkInfo, 1);
-			helper.registerGrinderRecipe(
-					miscHelper.getRecipeKey("magneticraft.ore_to_rocky_chunk_grinder", material.getName()),
-					oreOredict, rockyChunkInfo, 1, byproduct, 1, 0.15F, 50);
+//			helper.registerGrinderRecipe(
+//					miscHelper.getRecipeKey("magneticraft.ore_to_rocky_chunk_grinder", material.getName()),
+//					oreOredict, rockyChunkInfo, 1, byproduct, 1, 0.15F, 50);
 
 			configByproduct = config.getDefinedString("magneticraft.sluiceBoxByproduct", "minecraft:cobblestone",
 					miscHelper.metaItemPredicate(), "The default byproduct material to output in Magneticraft's sluice box.");
