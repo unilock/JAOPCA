@@ -92,16 +92,6 @@ repositories {
 	exclusiveContent {
 		forRepository {
 			maven {
-				url = "https://maven.mcmoddev.com/"
-			}
-		}
-		filter {
-			includeGroup "net.ndrei"
-		}
-	}
-	exclusiveContent {
-		forRepository {
-			maven {
 				url = "https://www.mod-buildcraft.com/maven/"
 			}
 		}
@@ -218,22 +208,22 @@ dependencies {
 	implementation("zone.rong:mixinbooter:9.1") {transitive = false}
 
 	// CraftTweaker
-	modImplementation("CraftTweaker2:ZenScript:4.1.20.698") {transitive = false}
-	modImplementation("CraftTweaker2:CraftTweaker2-API:4.1.20.698") {transitive = false}
-	modImplementation("CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.698") {transitive = false}
+	modImplementation("CraftTweaker2:ZenScript:4.1.20.699") {transitive = false}
+	modImplementation("CraftTweaker2:CraftTweaker2-API:4.1.20.699") {transitive = false}
+	modImplementation("CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.699") {transitive = false}
 
 	// GroovyScript
 	modImplementation("com.cleanroommc:groovyscript:1.0.1") {transitive = false}
 
 	// AbyssalCraft
-	modImplementation "curse.maven:abyssalcraft-53686:4856547"
+	modImplementation "curse.maven:abyssalcraft-53686:5330323"
 
 	// Advanced Rocketry
 	modImplementation "curse.maven:libvulpes-236541:3801015"
 	modImplementation "curse.maven:advanced-rocketry-236542:4671856"
 
 	// Applied Energistics 2
-	modImplementation "curse.maven:applied-energistics-2-223794:2747063"
+	modImplementation "curse.maven:ae2-extended-life-570458:5147702"
 
 	// Astral Sorcery
 	modImplementation "curse.maven:astral-sorcery-241721:3044416"
@@ -242,7 +232,7 @@ dependencies {
 	modImplementation "net.sengir.forestry:forestry_1.12.2:5.8.2.422"
 	modImplementation "com.mod-buildcraft:buildcraft-main:7.99.24.8"
 	modImplementation "curse.maven:buildcraft-compat-233140:3204471"
-	modImplementation("net.ndrei:bc-ore-processing:7.99.24.4-1.18") {transitive = false}
+	modImplementation "curse.maven:bc-ore-processing-277910:2882663"
 
 	// Embers Rekindled
 	modImplementation "curse.maven:embers-rekindled-300777:3695248"
@@ -269,7 +259,7 @@ dependencies {
 	modImplementation "curse.maven:futurepack-237333:2856874"
 
 	// HBM's Nuclear Tech Mod
-	modImplementation "curse.maven:hbms-nuclear-tech-mod-extended-edition-708939:5110918"
+	modImplementation "curse.maven:hbms-nuclear-tech-mod-extended-edition-708939:5254559"
 
 	// IndustrialCraft 2
 	modImplementation "net.industrial-craft:industrialcraft-2:2.8.222-ex112"
@@ -285,18 +275,18 @@ dependencies {
 
 	// Mekanism
 	modImplementation "MCMultiPart2:MCMultiPart:2.5.3"
-	modImplementation "curse.maven:mekanism-268560:2835175"
+	modImplementation "curse.maven:mekanism-ce-399904:5351260"
 
 	// Minestrappolation
 	modImplementation "curse.maven:minestrappolation-5-233351:2860018"
 
 	// Powered Thingies
-	modImplementation("net.ndrei:tesla-core-lib:1.12.2-1.0.18.28") {transitive = false}
-	modImplementation("net.ndrei:powered-thingies:1.12.2-1.0.15.25") {transitive = false}
+	modImplementation "curse.maven:tesla-core-lib-254602:3438487"
+	modImplementation "curse.maven:powered-thingies-264283:2556740"
 
 	// QMD
 	modImplementation "curse.maven:nuclearcraft-overhauled-336895:3862197"
-	modImplementation "curse.maven:qmd-362056:5204308"
+	modImplementation "curse.maven:qmd-362056:5354589"
 
 	// Thaumcraft
 	modImplementation "curse.maven:thaumcraft-223628:2629023"
@@ -315,9 +305,9 @@ dependencies {
 	modImplementation "slimeknights:TConstruct:1.12.2-2.13.0.183"
 
 	// Performance
-	modImplementation "curse.maven:reid-629017:5143492"
-	modImplementation "curse.maven:vintagefix-871198:5175094"
-	modImplementation "curse.maven:lolasm-460609:5120166"
+	modImplementation "curse.maven:reid-629017:5272391"
+	modImplementation "curse.maven:vintagefix-871198:5348800"
+	modImplementation "curse.maven:lolasm-460609:5257348"
 }
 
 def replacements = [
@@ -372,7 +362,7 @@ sourcesJar {
 def curseforgeDependencies = [
 	"abyssalcraft",
 	"advanced-rocketry",
-	"applied-energistics-2",
+	"ae2-extended-life",
 	"astral-sorcery",
 	"bc-ore-processing",
 	"crafttweaker",
@@ -386,7 +376,7 @@ def curseforgeDependencies = [
 	"industrial-craft",
 	"integrated-dynamics",
 	"magneticraft",
-	"mekanism",
+	"mekanism-ce",
 	"minestrappolation-5",
 	"powered-thingies",
 	"qmd",
@@ -397,7 +387,6 @@ def curseforgeDependencies = [
 ]
 
 def modrinthDependencies = [
-	"ae2",
 	"crafttweaker",
 	"embers",
 	"enderio",
@@ -406,7 +395,7 @@ def modrinthDependencies = [
 	"hbm-reloaded",
 	"industrial-craft",
 	"integrated-dynamics",
-	"mekanism",
+	"mekanism-community-edition",
 	"tinkers-construct",
 ]
 
